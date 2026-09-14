@@ -1,0 +1,35 @@
+# ---- allowlist: only competition code is pushed ------------------------------
+# Participation is individual and confidential; competition data, anything derived
+# from it, notes, logs and learning material must never reach a remote. Rather than
+# listing everything to exclude, ignore everything and re-include code explicitly.
+*
+!*/
+!.gitignore
+!.python-version
+!*.py
+!*.ipynb
+!pyproject.toml
+!uv.lock
+
+# ---- exceptions to the allowlist (later rules win) ---------------------------
+# the "Three Tasks, Seven Days" course (day1-day7, playbook, quizzes) — private
+course/
+
+# environments and build output — these contain .py files
+.venv/
+__pycache__/
+build/
+dist/
+wheels/
+*.egg-info/
+kout/
+
+# organizer-provided starter notebooks
+*/starter-notebook*.ipynb
+
+# embeds SHORTLIST_B64, a candidate shortlist computed from the competition images
+kaggle-loftr-verify.ipynb
+# embeds CAND, 3,439 indices of competition images selected for extra orientations
+kaggle-rot-canonical.ipynb
+# PICKS: hand-audited test answers keyed by question ID (the v8 re-selection table)
+pitcher/pitcher-solution-v8.ipynb
