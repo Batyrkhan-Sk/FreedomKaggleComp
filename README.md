@@ -1,6 +1,6 @@
 # KaggleComp
 
-My solutions to a private three-task Kaggle competition. Each task is a different kind of ML problem.
+My solutions to three-task Kaggle competition organized by Freedom AI Labs. Each task is a different kind of ML problem.
 
 | Task | Problem | Approach | Main notebook |
 |---|---|---|---|
